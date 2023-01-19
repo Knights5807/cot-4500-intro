@@ -21,10 +21,11 @@ for i in range(0, 3):
             matrix_2[i, j] = matrix_1[i, j] + 3
 
 # Prints each matrix with a space inbetween
-print(matrix_1)
+print(str(matrix_1).replace(' [','').replace('[', '').replace(']', ''))
 print('')
-print(matrix_2)
+print(str(matrix_2).replace(' [','').replace('[', '').replace(']', ''))
 print('')
 
 # Cuts last col off of matrix_2
-print(matrix_2[:, 0:2])
+matrix_3 = matrix_2[:, 0:2]
+print(str(matrix_3).replace(' [','').replace('[', '').replace(']', ''))
